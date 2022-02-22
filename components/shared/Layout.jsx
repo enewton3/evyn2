@@ -11,7 +11,9 @@ export default function Layout(props) {
   return (
     <ThemeProvider theme={lightTheme}>
       <Nav />
-      <Container sx={{backgroundColor: lightTheme.primary}}>{props.children}</Container>
+      <Container sx={{ backgroundColor: lightTheme.primary }} disableGutters>
+        {props.children}
+      </Container>
       <Footer />
     </ThemeProvider>
   );

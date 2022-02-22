@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 export default function Nav() {
   return (
-    <AppBar color="primary" position="static" className={styles.appbar}>
+    <AppBar color="primary" position="sticky" className={styles.appbar}>
       <Toolbar className={styles.toolbar}>
         <Logo />
         <NavLinks />
